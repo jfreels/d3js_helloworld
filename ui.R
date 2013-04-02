@@ -22,7 +22,7 @@ shinyUI(pageWithSidebar(
                 value="Hello World!"),
 
       helpText(HTML("<br>*Created by: <a href = \"https://twitter.com/jfreels4\">@jfreels4</a>
-                  <br>*github <a href = \"https://github.com/jfreels/fund_database\">code</a>
+                  <br>*github <a href = \"https://github.com/jfreels/d3js_helloworld\">code</a>
                   ")
       )
   ),
