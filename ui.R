@@ -17,7 +17,10 @@ shinyUI(pageWithSidebar(
   headerPanel("Hello World! with shiny and d3js"),
   
   sidebarPanel(
-      textInput(inputId="text",label="Type something:",value="Hello World!"),
+      textInput(inputId="text",
+                label="Type something:",
+                value="Hello World!"),
+
       helpText(HTML("<br>*Created by: <a href = \"https://twitter.com/jfreels4\">@jfreels4</a>
                   <br>*github <a href = \"https://github.com/jfreels/fund_database\">code</a>
                   ")
@@ -26,7 +29,7 @@ shinyUI(pageWithSidebar(
   mainPanel(
       # where the javascript lives
       includeHTML("d3js_helloworld.js"),
-      reactiveBar(outputId = "hellWorld")
+      reactiveBar(outputId = "helloWorld")
       )
   )
 )

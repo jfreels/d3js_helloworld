@@ -7,5 +7,11 @@ library(shiny)
 
 ### Shiny Server
 shinyServer(function(input, output) {
-  
+
+  textBox<-reactive({
+  	input$text
+  	})
+
+  output$helloWorld<-reactive({ textBox() })
+
 })
